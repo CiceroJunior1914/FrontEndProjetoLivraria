@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastros.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="menu-nav">
+
+        <nav class="menu-horizontal">
+
+            <div class="menu-busca">
+                <i class="bi bi-search" id="btn-busca"></i>
+                <input type="text" name="buscaInput" id="inputBusca" class="busca" placeholder="Digite algo para busca">
+
+            </div>
+
+            <div class="menu-logo">
+                Logo
+            </div>
+        </nav>
+
+
+
+        <nav class="menu-lateral">
+            <div class="btn-hamb">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div>
+            <!----->
+            <ul>
+    
+                <li class="item-menu ativo">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-house-door-fill"></i></i></span>
+                        <span class="textoLink">Home</span>
+                    </a>
+                </li>
+    
+                <!---ITEM 1-->
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-search"></i></span>
+                        <span class="textoLink">Busca</span>
+                    </a>
+                </li>
+    
+                   <!---ITEM 2-->
+                   <li class="item-menu">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="bi bi-cart2"></i>
+                        </span>
+                        <span class="textoLink">Vendas</span>
+                    </a>
+                </li>
+    
+                   <!---ITEM 3-->
+                   <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-x-square"></i></span>
+                        <span class="textoLink">Devolução</span>
+                    </a>
+                </li>
+    
+                   <!---ITEM 4-->
+                   <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-shop-window"></i></span>
+                        <span class="textoLink">Estoque</span>
+                    </a>
+                </li>
+    
+                   <!---ITEM 5-->
+                   <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-database"></i></span>
+                        <span class="textoLink">Cadastros</span>
+                    </a>
+                </li>
+    
+                   <!---ITEM 6-->
+                   <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
+                        <span class="textoLink">Relatorios</span>
+                    </a>
+                </li>
+    
+                   <!---ITEM 7-->
+                   <li class="item-menu">
+                    <a href="usuarios.html">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="textoLink">Usuarios</span>
+                    </a>
+                </li>
+    
+    
+    
+    
+    
+            </ul>
+        </nav>
+     
+    </header>
+    <main id="conteiner-principal">
+        <div id="conteiner-cadadstros">
+            <button type="button" id="btn-open-cadastar">Cadastrar</button>
+            
+            <i class="bi bi-search" id="buscar-cliente"></i>
+            <div id="modal-busca" class="hide2">
+                <div id="buscar-header">
+                    <h3>Buscar Cliente</h3>
+                </div>
+
+                <div id="conteiner-busca">
+
+                    <input type="text" id="textInput" placeholder="Digite o nome do Cliente">
+                    <i class="bi bi-search" id="btn-buscar-modal"></i>
+
+                </div>
+                <div id="resultado-busca">
+                    <p id="erro-busca"></p>
+                    <div id="conteiner-resposta"></div>
+                </div>
+                <div id="modal-btn">
+                    <button type="button" id="btn-fechar-modal-busca">Fechar</button>
+                </div>
+            </div>
+
+            <div id="fade-modal" class="hide"></div>
+            <div id="fade-busca" class="hide2"></div>
+
+
+            <div id="clientes-modal" class="hide">
+                <div id="modal-header">
+                    <h3>Cadastar Cliente</h3>
+                </div>
+
+                <div id="modal-body">
+                    <label for="">Nome</label>
+                    <input type="text" id="name" placeholder="Digite o nome">
+
+                    <label for="">CPF</label>
+                    <input type="number" name="" id="cpf" placeholder="Digite o CPF">
+
+                    <label for="">Telefone</label>
+                    <input type="number" id="telefone" placeholder="Digite o Telefone">
+
+                    <label for="">CEP</label>
+                    <input type="number" id="cep" placeholder="Digite o CEP">
+
+                    <label for="">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Digite o Endereço">
+                </div>
+
+                <div id="modal-resultado">
+
+                </div>
+
+                <div id="modal-footer">
+                    <button type="button" id="btn-fechar">Fechar</button>
+                    <button type="button" id="btn-cadastar">Cadastrar</button>
+                </div>
+            </div>
+
+            <div id="tabela-clientes">
+                <div id="cliente-header">
+                    <p>Id</p>
+                    <p>Nome</p>
+                    <p>CPF</p>
+                    <P>Telefone</P>
+                    <p>Cep</p>
+                    <p>Endereço</p>
+                </div>
+                <div id="tabela-body">
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+
+    <script src="js/menu.js"></script>
+    <script src="js/cadastros.js"></script>
+</body>
+</html>

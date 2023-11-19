@@ -1,0 +1,225 @@
+#conteiner-principal{
+    margin-top: 150px;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#conteiner-cadadstros{
+   
+    
+}
+#btn-open-cadastar{
+    height: 35px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(8, 183, 8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    cursor: pointer;
+
+}
+
+#btn-open-cadastar:hover{
+    background-color: rgb(43, 182, 43);
+    transition: 1s all;
+}
+
+#buscar-cliente{
+    font-size: 20pt;
+    margin-left: 10px;
+}
+#buscar-cliente:hover{
+    color: white;
+    transition: 1s all;
+}
+#cliente-header{
+    width: 1000px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 5px 5px 0px 0px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.elemento{
+    display: flex;
+   
+}
+.elemento > p{
+    width: 166.66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tabela-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: aliceblue;
+
+}
+
+#fade-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+#fade-busca{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+  #clientes-modal, #modal-busca {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    max-width: 90%;
+    background-color: #efefef;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+#modal-busca{
+    display: flex;
+}
+#conteiner-busca{
+    display: flex;
+}
+  #fade-modal, #clientes-modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  #fade-modal.hide, #clientes-modal.hide{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+  #fade-busca,  #modal-busca{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+  #fade-busca.hide2, #modal-busca.hide2{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #modal-header, #buscar-header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22pt;
+  }
+
+  #modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+
+
+  label{
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+  }
+
+  input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#modal-footer{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+#btn-fechar, #btn-fechar-modal-busca{
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+#btn-fechar:hover, #btn-fechar-modal-busca:hover{
+    background-color: rgb(249, 44, 44);
+    transition: 1s all;
+}
+
+#btn-cadastar{
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(2, 220, 45);
+    color: whitesmoke;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+#btn-cadastar:hover{
+    background-color: rgb(38, 216, 73);;
+    transition: 1s all;
+}
+#btn-buscar-modal{
+    font-size: 30px;
+    color: rgb(0, 24, 237);
+    cursor: pointer;
+}
+#erro-busca{
+    color: red;
+    text-align: center;
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#resultado-busca{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+#resultado-busca > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
